@@ -21,9 +21,7 @@ public:
   }
 
   std::string str() {
-    std::stringstream ss;
-    ss << m_category << " - " << m_what << "\n";
-    return ss.str();
+    return fmt::format("{} - {}\n", m_category, m_what);
   }
 };
 
